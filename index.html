@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Personal Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>AI Personal Study Planner</h1>
+
+    <div class="box">
+        <label>Subject:</label>
+        <input type="text" id="subject">
+
+        <label>Difficulty:</label>
+        <select id="difficulty">
+            <option value="3">Hard</option>
+            <option value="2">Medium</option>
+            <option value="1">Easy</option>
+        </select>
+
+        <button onclick="addSubject()">Add Subject</button>
+
+        <br><br>
+
+        <label>Total study hours today:</label>
+        <input type="number" id="hours">
+
+        <br><br>
+
+        <button onclick="generatePlan()">Generate AI Plan</button>
+
+        <h3>Added Subjects:</h3>
+        <ul id="subjectList"></ul>
+    </div>
+
+    <h2>Your Study Plan</h2>
+    <ul id="output"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
